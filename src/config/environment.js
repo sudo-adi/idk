@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   NODE_ENV: process.env.NODE_ENV || "development",
   PORT: process.env.PORT || 3000,
-  DB_URI: process.env.DB_URI || "mongodb://localhost:27017/ropa",
+  DB_URI: process.env.DB_URI,
   JWT_SECRET: process.env.JWT_SECRET || "fallback-secret",
   JWT_EXPIRE: process.env.JWT_EXPIRE || "7d",
   EMAIL: {
